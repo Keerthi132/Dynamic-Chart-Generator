@@ -1,0 +1,26 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build and temp files
+dist/
+*.cache
+tmp/
+*.bak
+
+# Public uploads (if any)
+public/uploads/
