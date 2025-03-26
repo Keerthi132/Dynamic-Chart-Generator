@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Chart Generator</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dynamic Chart Generator</h1>
+    </header>
+
+    <main class="container">
+        <section class="form-container">
+            <h2>Customize Your Chart here</h2>
+            <p class="para para2">Select the chart type and enter the data to generate a visual representation.</p>
+            <!-- Chart Type Selection -->
+            <label for="chartType">Choose Chart Type:</label>
+            <select id="chartType">
+                <option value="bar">Bar Chart</option>
+                <option value="line">Line Chart</option>
+                <option value="pie">Pie Chart</option>
+                <option value="doughnut">Doughnut Chart</option>
+            </select>
+
+            <!-- Data Inputs -->
+            <div class="input-container">
+                <label>Labels (comma separated):</label>
+                <input type="text" id="labels" placeholder="E.g., Apple, Banana, Orange">
+
+                <label>Values (comma separated):</label>
+                <input type="text" id="values" placeholder="E.g., 10, 20, 30">
+            </div>
+
+            <!-- Button to Generate Chart -->
+            <button id="generateChart"><strong>Generate Chart</strong></button>
+        </section>
+
+        <!-- Sample Chart Image -->
+        <section class="image-container">
+            <h2>A Sample Bar Chart</h2>
+            <br/>
+            <img src="/sampleChart.jpg" alt="Sample Chart"><br/><br/>
+            <p class="para2">
+                The above chart demonstrates a sample dataset plotted using a bar chart. 
+                It showcases how different categories (e.g., Red, Blue, Green, Yellow, Orange) can be 
+                visually compared.
+            </p>
+        </section>
+
+        <!-- Chart Display Area -->
+        <section class="chart-container">
+            <h2>Generated Chart</h2>
+            <canvas id="chartCanvas"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Dynamic Chart Generator | Designed for Data Visualization</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
