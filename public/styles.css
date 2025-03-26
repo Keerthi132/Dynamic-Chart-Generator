@@ -1,0 +1,144 @@
+/* Reset & General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #fff8e4;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Styling with Gradient */
+header {
+    background: linear-gradient(135deg, #ff9679, #ff7c92);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
+/* Headings Styling */
+h1 {
+    color: #3700a4;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out;
+}
+
+h2 {
+    color: #3700a4;
+    text-shadow: 2px 2px 4px #ff759e;
+    transition: color 0.3s ease-in-out;
+}
+
+.para2 {
+    text-align: justify;
+    padding: 8px;
+}
+
+.para {
+    padding-top: 10px;
+    font-weight: 550;
+    color: rgb(233, 88, 25);
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+h2:hover {
+    color:  #ff2c87;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Form Section */
+.form-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(135deg, #ff7c54, #ff677d);
+    color: #3700a4;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 22px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff521e, #ff3453);
+}
+
+/* Image Section */
+.image-container {
+    text-align: center;
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Chart Section */
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+canvas {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #ff9679, #ff7c92);
+    color: rgb(21, 73, 103);
+    padding: 10px;
+}
