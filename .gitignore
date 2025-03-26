@@ -4,6 +4,9 @@ node_modules/
 # Environment variables
 .env
 
+# Dependency Versions
+package-lock.json
+
 # Logs
 logs/
 *.log
